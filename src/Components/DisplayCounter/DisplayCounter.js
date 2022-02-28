@@ -15,4 +15,4 @@ const mapStateToProps = (store) => {
         count: store.count,
     };
 };
-export default connect(null)(DisplayCounter);
+export default connect(mapStateToProps)(DisplayCounter);
