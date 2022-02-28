@@ -1,9 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 
+import "./DisplayCounter.css";
+
 const DisplayCounter = ({ count }) => {
     return (
-        <div>
+        <div className="counter">
             <h1>Count</h1>
             <p>{count}</p>
         </div>

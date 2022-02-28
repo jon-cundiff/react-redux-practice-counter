@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { addValue, subtractValue } from "../../store/actions";
 
+import "./AddSubtractCounter.css";
+
 const AddSubtractCounter = ({ addAction, subtractAction }) => {
     const [value, setValue] = useState(0);
 
@@ -13,10 +15,13 @@ const AddSubtractCounter = ({ addAction, subtractAction }) => {
     const handleSubtractClick = () => subtractAction(value);
 
     return (
-        <div>
+        <div className="math-container">
             <input type="number" value={value} onChange={handleValueChange} />
-            <button onClick={handleAddClick}>Add</button>
-            <button onClick={handleSubtractClick}>Subtract</button>
+
+            <div className="math-buttons">
+                <button onClick={handleAddClick}>Add</button>
+                <button onClick={handleSubtractClick}>Subtract</button>
+            </div>
         </div>
     );
 };

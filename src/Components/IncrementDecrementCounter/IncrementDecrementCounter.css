@@ -1,0 +1,12 @@
+.step-container {
+    border: 2px solid navy;
+    background-color: rgba(0, 0, 255, 0.05);
+    display: flex;
+    width: 50%;
+    padding: 1.5em;
+    justify-content: space-between;
+}
+
+.step-container button {
+    width: 45%;
+}
